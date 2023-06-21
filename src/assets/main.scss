@@ -1,0 +1,61 @@
+@import './base.css';
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+.task {
+  &-wrap {
+    margin: 24px 0px;
+  }
+  &-form {
+    margin-top: 12px;
+
+
+    input {
+      border-radius: 12px;
+      border: none;
+      padding: 12px;
+      width: 340px;
+    }
+  }
+  &-control {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &-empty {
+
+  }
+}
